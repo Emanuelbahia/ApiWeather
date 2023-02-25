@@ -1,0 +1,131 @@
+.label-select{
+   font-size: 17px;
+   
+}
+.select{
+    font-size: 12px;
+    margin-left: 2%;
+    width: 60vw;
+}
+.lab-sel{
+    padding-left: 3%;
+    width: 95%;
+    height: 4vh;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+}
+.div-detail{
+    width: 75%;
+    height: 6vh;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    font-size: 4vw;
+    font-weight: bold;
+}
+.temp-icon{
+    display: flex;
+    align-items: center;
+}
+.weather-icons{
+    color: black;
+    margin-right: 3%;
+    font-size: 4vh;
+}
+.h2-city{
+    margin-top: 30px;
+    font-size: 7vw;
+}
+.temp-city{
+    font-size: 40px;
+    margin: 10%;
+}
+.icon-sun{
+    color: yellow;
+    font-size: 15vw;
+}
+.icon-cloud{
+    color: grey;
+    font-size: 15vw;
+}
+.container-body{
+    min-height: 100vh;
+}
+.container-reload{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.button-reload{
+    background-color: #6E44FF;
+    padding: 0.5vw;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/*media queries tablet*/
+
+@media (min-width: 481px){ 
+    
+    .h2-city{
+        font-size: 6vw;
+    }
+    .div-detail{
+        font-size: 3vw;
+    }
+    .lab-sel{
+        margin-top: 2%;
+        margin-left: 0;
+        width: 400px;
+        height: 4vh;
+    }
+    .select{
+        width: 200px;
+    }
+}
+
+  /*media queries pc*/
+
+  @media (min-width: 1024px){ 
+
+    .div-detail{
+        font-size: 2vw;
+        width: 40%;
+        margin: 1% 2%;
+    }
+    .container-detail{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .icon-cloud, .icon-sun{
+        font-size: 10vw;
+    }
+    .temp-city{
+        font-size: 4vw;
+        margin: 2% 8%;
+    }
+    .h2-city{
+        font-size: 4vw;
+        margin: 2% 0;
+        margin-left: 4%;
+    }
+    .lab-sel{
+        margin-top: 2%;
+        margin-left: 4%;
+        width: 400px;
+        height: 4vh;
+    }
+    .container-labels{
+        display: flex;
+    }
+
+  }

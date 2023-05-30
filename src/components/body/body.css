@@ -1,10 +1,9 @@
 .label-select{
-   font-size: 17px;
+    font-size: 4vw;
    
 }
 .select{
-    font-size: 12px;
-    margin-left: 2%;
+    font-size: 2vh;
     width: 60vw;
 }
 .lab-sel{
@@ -15,10 +14,11 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-top: 4%;
 }
 .div-detail{
-    width: 75%;
+    width: 95%;
     height: 6vh;
     background-color: white;
     border-radius: 10px;
@@ -31,7 +31,14 @@
 }
 .temp-icon{
     display: flex;
+    margin-bottom: 7vw;
+    background-color: #6E44FF;
+    border-radius: 35px;
+    border: none;
+    padding: 5vw 0;
+    justify-content: space-evenly;
     align-items: center;
+    box-shadow: inset white 7px 7px 20px 0px;
 }
 .weather-icons{
     color: black;
@@ -39,23 +46,29 @@
     font-size: 4vh;
 }
 .h2-city{
-    margin-top: 30px;
+    margin: 5vw 0;
     font-size: 7vw;
+    text-align: center;
+    color: #6E44FF;
 }
 .temp-city{
-    font-size: 40px;
-    margin: 10%;
+    font-weight: 600;
+    font-size: 14vw;
+    margin: 0;
 }
 .icon-sun{
     color: yellow;
-    font-size: 15vw;
+    font-size: 25vw;
 }
 .icon-cloud{
-    color: grey;
-    font-size: 15vw;
+    color: #a9a0a0;
+    font-size: 25vw;
 }
 .container-body{
-    min-height: 100vh;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container-reload{
     display: flex;
@@ -64,21 +77,41 @@
 }
 .button-reload{
     background-color: #6E44FF;
-    padding: 0.5vw;
-    color: white;
+    padding: 2vw;
+    color: #eeeeee;
     border-radius: 10px;
 }
-
+.temp-icon-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #cfcbcb;
+    margin-bottom: 4vw;
+}
+.p-description{
+    margin: 0;
+    font-size: 4vw;
+}
+.description-weather{
+    width: 90vw;
+}
+.none{
+    display: none;
+}
 
 /*media queries tablet*/
 
 @media (min-width: 481px){ 
     
     .h2-city{
-        font-size: 6vw;
+        font-size: 5vw;
+        margin: 3vw 0;
     }
     .div-detail{
-        font-size: 3vw;
+        font-size: 2.5vw;
+        width: 40vw;
+        padding-left: 2vh;
     }
     .lab-sel{
         margin-top: 2%;
@@ -89,14 +122,57 @@
     .select{
         width: 200px;
     }
+    .icon-cloud, .icon-sun{
+        font-size: 15vw;
+    }
+    .temp-city {
+        font-size: 5vw;
+    }
+    .p-description{
+        font-size: 2vw;
+    }
+    .description-weather{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-detail{
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+    .temp-icon{
+        width: 40vh;
+        padding: 5vw;
+        margin-bottom: 3vw;
+    }
+    .container-reload{
+        margin-top: 10vw;
+    }
 }
 
   /*media queries pc*/
 
   @media (min-width: 1024px){ 
 
+    .container-reload {
+        margin-top: 7vh;
+    }.container-reload {
+        margin-top: 7vh;
+    }
+    .container-footer {
+        margin-top: 7vh;
+    }
+    .none{
+        display:block;
+        margin-right: 20vh;
+        font-size: 5vh;
+        color: #6E44FF;
+    }
     .div-detail{
-        font-size: 2vw;
+        font-size: 1.7vw;
         width: 40%;
         margin: 1% 2%;
     }
@@ -107,16 +183,13 @@
         width: 100%;
     }
     .icon-cloud, .icon-sun{
-        font-size: 10vw;
+        font-size: 8vw;
     }
     .temp-city{
-        font-size: 4vw;
-        margin: 2% 8%;
+        font-size: 3vw;  
     }
     .h2-city{
-        font-size: 4vw;
-        margin: 2% 0;
-        margin-left: 4%;
+        display: none;
     }
     .lab-sel{
         margin-top: 2%;
@@ -127,5 +200,32 @@
     .container-labels{
         display: flex;
     }
-
+    .button-reload{
+        padding: .8vw;
+    }
+    .temp-icon{
+        margin-bottom: 4vh;
+        padding: 4vh;
+    }
+    .temp-icon-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4vh;
+    }
+    .p-description{
+        font-size: 1vw;
+    }
+    .label-select {
+        font-size: 3vh;
+    }
+    .description-weather{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    
   }

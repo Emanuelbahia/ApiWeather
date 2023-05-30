@@ -4,8 +4,7 @@ import "./header.css"
 function Header() {
     return ( 
         <div className="header-container">
-            
-            <div className="header-title">AppiWeather</div>
+            <h1 className="header-title">AppiWeather</h1>
         </div>
      );
 }

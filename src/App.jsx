@@ -9,8 +9,7 @@ function App() {
     <div className="app-background">
       <Header />
       <Body/>
-      <Footer/>
-      
+      <Footer/>  
     </div> 
   )
 }

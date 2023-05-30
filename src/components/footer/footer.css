@@ -3,13 +3,13 @@
     width: 100%;
     border-radius: 10px;
     background-color: white;
-    padding: 4% 0;
+    padding: 1vw 0;
 }
 
 .footer-terms{
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .footer-copy{
@@ -35,10 +35,17 @@
     .footer-terms{
         display: flex;
         justify-content: center;
-        /* align-items: center; */
+      
+    }
+    .link-hover, .span-footer {
+        font-size: 2.2vw;
     }
     .span-footer{
         margin: 0 2vw;
+    }
+    .footer-copy{
+        margin-top: 0; 
+        font-size: 2vw;
     }
     
 }
@@ -49,18 +56,19 @@
 
     .container-footer{
         padding: 1% 0;
-        border-radius: 0;
     }
     .footer-terms{
         display: flex;
         justify-content: center;
-        /* align-items: center; */
     }
     .span-footer{
         margin: 0 2vw;
     }
     .footer-copy{
-        margin-top: 2%;
+        margin-top: 0;
+        font-size: 1vw;
     }
-
+    .link-hover, .span-footer {
+        font-size: 1.2vw;
+    }
   }

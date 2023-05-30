@@ -4,6 +4,7 @@
     border-radius: 10px ;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: white;
 }
 
@@ -23,11 +24,9 @@
 }
 
 .header-title{
-    width: 80%;
     height: 7vh;
     display: flex;
     align-items: center;
-    padding-left: 5%;
     color: #6E44FF;
     font-size: 3vh;
     font-weight: bold;
@@ -50,7 +49,6 @@
   @media (min-width: 1024px){ 
 
     .header-container{
-        border-radius: 0;
         height: 14vh;
     }
     .header-title{

@@ -1,6 +1,6 @@
 .header-container{
     width: 100%;
-    height: 12vh;
+    height: 7vh;
     border-radius: 10px ;
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@
   @media (min-width: 1024px){ 
 
     .header-container{
-        height: 14vh;
+        height: 10vh;
     }
     .header-title{
         font-size: 4vw;

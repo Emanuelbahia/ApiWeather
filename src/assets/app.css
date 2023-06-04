@@ -1,13 +1,10 @@
 .app-background{
     background: radial-gradient(circle, rgb(88 217 214 / 15%) 0%, rgb(50 209 217) 74%);
-    padding: 5%;
+    padding: 2vh;
 }
 
 /*media queries pc*/
 
 @media (min-width: 1024px){  
- 
-    .app-background{
-        padding: 2vh;
-    }
+    
 }

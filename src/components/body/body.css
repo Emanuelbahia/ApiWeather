@@ -19,7 +19,7 @@
 .div-detail{
     width: 95%;
     height: 6vh;
-    background-color: white;
+    background-color: #eeeeee;
     border-radius: 10px;
     margin-top: 10px;
     display: flex;
@@ -27,6 +27,7 @@
     padding-left: 5%;
     font-size: 4vw;
     font-weight: bold;
+    box-shadow: 6px 3px 10px 0px;
 }
 .temp-icon{
     display: flex;
@@ -109,7 +110,7 @@
     }
     .div-detail{
         font-size: 2.5vw;
-        width: 40vw;
+        width: 41vw;
         padding-left: 2vh;
     }
     .lab-sel{
@@ -160,12 +161,15 @@
   @media (min-width: 1024px){ 
 
     .container-reload {
-        margin-top: 7vh;
-    }.container-reload {
-        margin-top: 7vh;
+        margin-top: 4vh;
     }
-    .container-footer {
-        margin-top: 7vh;
+    .container-body{
+        max-width: 1200px;
+    }
+    .wraper-data{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .none{
         display:block;
@@ -175,7 +179,7 @@
     }
     .div-detail{
         font-size: 1.7vw;
-        width: 40vw;
+        width: 42%;
         margin: 1vh;
     }
     .container-detail{

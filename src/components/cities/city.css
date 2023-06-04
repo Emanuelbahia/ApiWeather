@@ -1,0 +1,102 @@
+.container-all-cities{
+    margin-top: 10vw;
+}
+.container-city-temp{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-around;
+    background: rgb(35 187 195);
+    height: 10vw;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 2vw;
+}
+.h3-name-city{
+    width: 30vw;
+    margin: 0;
+    font-size: 4vw;
+    color: #252525;
+}
+.h3-temp-min-city{
+    font-size: 3vw;
+    color: #eeeeee;
+    margin-top: 4vw;
+}
+.h3-temp-city{
+    margin: 0;
+    font-size: 4vw;
+    color: #252525;
+}
+.cloud-city{
+    color: grey;
+    font-size: 6vw;
+}
+.sun-city{
+    color: yellow;
+    font-size: 6vw;
+}
+
+/*media queries tablet*/
+
+@media (min-width: 481px){ 
+
+    .container-all-cities{
+        margin-top: 8vw;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        justify-content: space-between;
+    }
+    .container-city-temp{
+        width: 44vw;
+        height: 7vw;
+    }
+    .h3-name-city{
+        font-size: 2.7vw;
+        width: 20vw;
+    }
+    .sun-city{
+        font-size: 4vw;
+    }
+    .cloud-city{
+        font-size: 4vw;
+    }
+    .h3-temp-city{
+        font-size: 3vw;
+    }
+    .h3-temp-min-city{
+        display: none;
+    }
+}
+
+/*media queries pc*/
+
+@media (min-width: 1024px){ 
+
+    .container-city-temp{
+        height: 8vh;
+        width: 42%;
+    }
+    .h3-name-city{
+        font-size: 3.5vh;
+        width: 45%;
+        padding-left: 1vh;
+    }
+    .sun-city, .cloud-city{
+        font-size: 5vh;
+    }
+    .h3-temp-city{
+        font-size: 3vh;
+    }
+    .h3-temp-min-city{
+        display: block;
+        font-size: 2vh;
+        margin-top: 2vh;
+    }
+    .container-all-cities{
+        margin-top: 8vh;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}

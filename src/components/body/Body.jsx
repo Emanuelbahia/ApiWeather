@@ -7,6 +7,7 @@ import { MdOutlineVisibility, MdLocationPin } from "react-icons/md"
 import { BsSunFill, BsFillCloudsFill } from "react-icons/bs"
 
 import "./body.css"
+import City from "../cities/City";
 
 function Body() {
 
@@ -15,7 +16,6 @@ function Body() {
   const [weather, setWeather] = useState(null); // de entrada no se cual es el clima
   const [city, setCity] = useState("");
   
-  console.log(weather)
   useEffect(() => {
     
     //funcion auto invocada
@@ -42,8 +42,10 @@ function Body() {
   const cityHandler = async e => {
     const temp = e.currentTarget.value;
     temp && setWeather(await getCityWeather(temp));
+    
     //para saber cual es el nombre de la ciudad q eligio
-    setCity(temp)
+    setCity(temp);
+    
   }
   //para poder refrescar la pagina.
   function refreshPage() {
@@ -81,7 +83,7 @@ function Body() {
               
            {/* si tengo clima me lo muestra! el toFixed es para sacarle los decimales */}
            { weather && (
-             <div>
+             <div className="wraper-data">
                 <h2 className="h2-city">
                   <span><MdLocationPin/></span> { city }
                 </h2>
@@ -109,6 +111,7 @@ function Body() {
                 </div>
             </div>
            )}
+           <City/>
            {/* Puse esta boton para refrescar la pagina y poder cambiar de ciudad */}
            {weather && (
                <div className="container-reload">
